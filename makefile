@@ -15,7 +15,7 @@ EMR_INSTANCE_TYPE=m3.xlarge
 EMR_INSTANCE_COUNT=3
 EMR_OPTIONS=--applications Name=Spark --use-default-roles
 create_cluster:
-	aws emr create-cluster --profile ${AWS_PROFILE} --name "$(EMR_CLUSTER_NAME)" --release-label $(EMR_RELEASE_LABEL)  --ec2-attributes KeyName=${AWS_KEY_NAME} --instance-type $(EMR_INSTANCE_TYPE) --instance-count $(EMR_INSTANCE_TYPE) $(EMR_OPTIONS)
+	aws emr create-cluster --profile ${AWS_PROFILE} --name "$(EMR_CLUSTER_NAME)" --release-label $(EMR_RELEASE_LABEL)  --ec2-attributes KeyName=${AWS_KEY_NAME} --instance-type $(EMR_INSTANCE_TYPE) --instance-count $(EMR_INSTANCE_COUNT) $(EMR_OPTIONS)
 
 list_clusters:
 	aws emr --profile ${AWS_PROFILE} list-clusters
