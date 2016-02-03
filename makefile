@@ -10,7 +10,7 @@
 #   e.g. export EMR_CLUSTER_ID=myclusterid
 
 EMR_CLUSTER_NAME=emr-spark-cluster
-EMR_RELEASE_LABEL=emr-4.2.0
+EMR_RELEASE_LABEL=emr-4.3.0
 EMR_INSTANCE_TYPE=m3.xlarge
 EMR_INSTANCE_COUNT=3
 EMR_OPTIONS=--applications Name=Spark --use-default-roles
